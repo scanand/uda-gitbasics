@@ -1,0 +1,42 @@
+THis is reflection
+Compare files using diff commands
+touch commands to create files on command line
+installing the text editor and creating first text file
+
+
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+You can see what has been changed and if the changes are related to the bug.  Diff command
+helped to identify both easily rather than going thru changes manually.
+
+
+How could having easy access to the entire history of a file make you a
+more efficient programmer in the long term?
+You dont have to worry about to manage different historical versions of the file
+Increased Focus - focus on problem in hand
+Version Control - can help you to dig out old code
+
+What do you think are the pros and cons of manually choosing when to create a commit,
+like you do in Git, vs having versions automatically saved, like Google Docs does?
+==> cons is that you may wait bit too long to commit the changes, which can be too big
+causing merge issue, or loosing work before commit
+==> pros - programmer can club changes together to make a logical unit, such that
+its traceable in future through commit history and comments associated
+Vs Automatically saved - no associated comments and every save creating version
+its like too much version history and hard to compare
+
+
+Why do you think some version control systems, like Git,
+allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+==> both systems are used for different purposes, one where inter-dependency between
+files commit set and other individual files are required versions.s
+
+How can you use the commands git log and git diff to view the history of files?
+git log lists all the files in the current repository with commit details like id and comments
+git diff command show what are the differences between two files
+
+How might using version control make you more confident to make changes that could break something?
+as there is fallback option to revert, check the history of changes, there is
+nothing to loose if we break something
+
+Now that you have your workspace set up, what do you want to try using Git for?
+further advanced git commands/actions on command prompt 
