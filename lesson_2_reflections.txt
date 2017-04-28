@@ -21,6 +21,14 @@ with relevant comment comprising the logical change.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+When there is parallel development by multiple people, where codebase can change at same time and decision is
+pending in sometime in future.
+2 different releases working simultaneously
+trial feature
+Branches can separate the development into different tags/branches, resulting non-conflicting changes
+where changes not required in future can be ignored, or committed depending on the situation
+Peace of mind for reverting back or merging.s
+
 
 How do the diagrams help you visualize the branch structure?
 
