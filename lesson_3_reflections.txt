@@ -1,1 +1,4 @@
 #this is lesson 3 reflections
+
+When would you want to use a remote repository rather than keeping all your work local?
+When this is a shared repository, multiple developers are working on same piece of code
