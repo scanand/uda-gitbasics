@@ -1,3 +1,30 @@
+#Git Commands
+
+#Things to remember
+origin == means implicit name of the remote repository, given by git 'clone' command.
+master == name of the default branch name, either remote or local, given repository
+origin/master == is name of local branch, which is checked out from remote branch
+
+git remote add pb https://github.com/paulboone/ticgit
+##{customname} == when repository is 'cloned', and when there are many,
+##{'pb'} gives shortcut to refer to the remote repository like
+git fetch pb
+
+#Always show local results, no internet connection is required
+git log
+git status
+
+#ADD REMOTE REPOSITORY TO LOCAL
+git remote add origin https://github.com/scanand/uda-gitbasics.git
+
+git pull origin <REMOTE REPOSITORY NAME> master <BRANCH NAME>
+git push origin <REMOTE REPOSITORY NAME> master <BRANCH NAME>
+
+
+#remotes names
+git remote -v
+
+
 #this is lesson 3 reflections
 
 When would you want to use a remote repository rather than keeping all your work local?
@@ -6,3 +33,22 @@ When this is a shared repository, multiple developers are working on same piece 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 You may want to pull only relevant changes, which are required locally.
 Not all changes happens on remote can be applied to local copy, since there could be changes on local files.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Forks - on github - when I want to clone someone else's repository, and pushing it to remote repository, both these steps can be achieved by one step
+clone - copy existing repository to another local repository with other name
+clone - copy existing remote repository from github to local with same or different name
+branches - local commit tree with different tag names
+
+17 May
+git fetch origin
+git merge master origin/master
+#pull is equivalent to fetch and merge, if you have changes in both remote & local copy of repository,
+#fetch will get remote changes in new branch 'origin/master' branch and your changes will remain in 'master'
+#then you can merge them manually, however this can be achieved by just single command 'pull'
+git pull origin master
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+last known state is just gives you current state of the remote repository, this could be useful
+when you need to go offline and you can continue working in your own branch.  later you may opt to
+merge your local branch with master => origin/master
