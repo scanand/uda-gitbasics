@@ -52,3 +52,10 @@ What is the benefit of having a copy of the last known state of the remote store
 last known state is just gives you current state of the remote repository, this could be useful
 when you need to go offline and you can continue working in your own branch.  later you may opt to
 merge your local branch with master => origin/master
+
+22May
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+Git is used for local file keeping, so working on local copies before committing to github or if internet is not available. without git possibly easier, lightweight
+option could be shared drive location.
+
+github is cloud based solution, and collaboration with team is easier, without github, this would be possible by other cvs solutions or dropbox like solutions
