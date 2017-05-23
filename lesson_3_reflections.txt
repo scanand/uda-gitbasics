@@ -1,5 +1,7 @@
 #Git Commands
 
+git log --graph --oneline --decorate --all
+
 #Things to remember
 origin == means implicit name of the remote repository, given by git 'clone' command.
 master == name of the default branch name, either remote or local, given repository
@@ -59,3 +61,24 @@ Git is used for local file keeping, so working on local copies before committing
 option could be shared drive location.
 
 github is cloud based solution, and collaboration with team is easier, without github, this would be possible by other cvs solutions or dropbox like solutions
+
+
+merging different branches in the forked braches
+>>on github, more-oil branch was merged with master, and tagname(branch) was removed.  So more-oil changes are already found on master
+(master)git pull origin master # merge local master from origin master, which will get new branch and you branch too
+(master) git checkout different-oil #change to your branch locally
+(different-oil) git merge master different-oil #automatic merge will fail, since same line in same file has been changed
+>>make manual changes to keep both changes, yours and remote branch changes
+
+23 May
+Reflect: When to use a separate branch
+You just saw that the workflow when making changes in a separate branch is more complicated than working directly in
+master, especially when you need to stay up-to-date with changes others are making. Rather than simply pulling and pushing,
+ you need to pull changes into your local master branch, merge the local master into your branch (different-oil, in our case),
+then push your branch to the remote before finally merging your branch into master, either locally or on GitHub.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+When I am working on separate feature which needs to be reviewed by peers, before committing to master. And also without disrupting the development
+on master branch.
+My code will be available for comments and review, and further revisions, later merged into main branch master
+Parallel development, within local git and on github as well.
